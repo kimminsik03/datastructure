@@ -1,10 +1,11 @@
-list1 =[1,2,3,4,5]
-list2 =["하나","둘","셋","넷","다섯"]
+#중복 요소 찾기
+city = ["인천","서울","김포","수원","서울","부산"]
 
-result = list(zip(list1,list2))
-# zip은 2개의 리스틀 튜플형태로 모아줌
-# zip의 결과를 볼려면 list형태로 감싸줘야 함
+city = set(city) #set를 사용하면 중복값은 제외하고 출력이 됨
+city.add("김포") #set은 add 속성을 통하여 값을 추가할 수 있음 다만 중복 값은 무시됨
+city.add("대전")
 
-print(result)
+print(city)
+
 
 
