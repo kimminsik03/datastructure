@@ -15,7 +15,7 @@ class LinkedList:
         current = self.head
         while current.link:
             current = current.next #다음 노드로 이동
-        current = Node(data)
+        current.link = Node(data)
 
 ll = LinkedList()
 ll.append(8)
