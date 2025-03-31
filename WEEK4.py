@@ -1,23 +1,39 @@
-class Node:
-    def __init__(self,data,link=None):
+import  random
+
+
+class node:
+    def __init__(self,data,link =None):
         self.data = data
         self.link = link
 
-
-class LinkedList:
+class list:
     def __init__(self):
         self.head = None
 
-    def append(self,data):
-        if not self.head: #링크드리스트가 하나도 없는 상태
-            self.head = Node(data) #새 노트를 해더에 연결
+    def append (self,data):
+        if self.head == None:
+            self.head = node(data)
             return
-        current = self.head
-        while current.link:
-            current = current.next #다음 노드로 이동
-        current.link = Node(data)
+        corrent = self.head
+        while corrent.link:
+            current = current.link
+        current.link = node(data)
 
-ll = LinkedList()
-ll.append(8)
-ll.append(10)
-ll.append(-9)
+
+
+    def __str__(self):
+        Node = self.head
+        output = ""
+        while Node is not None:
+            ndata = Node.data
+            output += f"{ndata} ->"
+            Node = Node.link
+        return output
+
+l1 = list()
+l1.append(8)
+l1.append(9)
+l1.append(10)
+print(l1)
+
+
