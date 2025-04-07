@@ -36,18 +36,17 @@
 # list1 = [45, 5, 22, 31, 7, 19,7,19,3]
 # print(sample(list1))
 
-def sample(list):
-    zeroindex =0
-    for index, value in enumerate(list):
-        if value !=0:
-            list[zeroindex] = value
-            if index != zeroindex:
-                list[index] =0
-            zeroindex+=1
-    return list
-
-
-
-l = [11, 0, 9, 0, -77]
-print(sample(l))
-
+# def sample(list):
+#     zeroindex =0
+#     for index, value in enumerate(list):
+#         if value !=0:
+#             list[zeroindex] = value
+#             if index != zeroindex:
+#                 list[index] =0
+#             zeroindex+=1
+#     return list
+#
+#
+#
+# l = [11, 0, 9, 0, -77]
+# print(sample(l))
